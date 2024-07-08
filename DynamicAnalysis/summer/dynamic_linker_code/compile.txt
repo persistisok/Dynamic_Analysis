@@ -1,0 +1,6 @@
+gcc -shared -fPIC -o libF.so F1.c F.c
+sudo cp libF.so /usr/lib
+gcc victim.c libF.so -o victim
+readelf -a victim > victim_elf.txt 
+objdump -d victim > victim_obj_d.txt 
+

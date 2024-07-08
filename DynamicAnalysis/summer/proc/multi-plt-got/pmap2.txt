@@ -1,0 +1,37 @@
+11478:   ./circle1
+000055aca5771000      4K r---- circle1
+000055aca5772000      4K r-x-- circle1
+000055aca5773000      4K r---- circle1
+000055aca5774000      4K r---- circle1
+000055aca5775000      4K rw--- circle1
+000055aca6e31000    132K rw---   [ anon ]
+00007fafdc950000     12K rw---   [ anon ]
+00007fafdc953000    136K r---- libc-2.31.so
+00007fafdc975000   1504K r-x-- libc-2.31.so
+00007fafdcaed000    312K r---- libc-2.31.so
+00007fafdcb3b000     16K r---- libc-2.31.so
+00007fafdcb3f000      8K rw--- libc-2.31.so
+00007fafdcb41000     16K rw---   [ anon ]
+00007fafdcb52000      4K r---- libInject.so
+00007fafdcb53000      4K r-x-- libInject.so
+00007fafdcb54000      4K r---- libInject.so
+00007fafdcb55000      4K r---- libInject.so
+00007fafdcb56000      4K rw--- libInject.so
+00007fafdcb57000      4K r---- libUtils.so
+00007fafdcb58000      4K r-x-- libUtils.so
+00007fafdcb59000      4K r---- libUtils.so
+00007fafdcb5a000      4K r---- libUtils.so
+00007fafdcb5b000      4K rw--- libUtils.so
+00007fafdcb5c000      8K rw---   [ anon ]
+00007fafdcb5e000      4K r---- ld-2.31.so
+00007fafdcb5f000    140K r-x-- ld-2.31.so
+00007fafdcb82000     32K r---- ld-2.31.so
+00007fafdcb8a000      4K r-x--   [ anon ]
+00007fafdcb8b000      4K r---- ld-2.31.so
+00007fafdcb8c000      4K rw--- ld-2.31.so
+00007fafdcb8d000      4K rw---   [ anon ]
+00007ffc05636000    136K rw---   [ stack ]
+00007ffc0567d000     16K r----   [ anon ]
+00007ffc05681000      8K r-x--   [ anon ]
+ffffffffff600000      4K --x--   [ anon ]
+ total             2560K

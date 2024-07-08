@@ -1,0 +1,32 @@
+gdb noF_debug
+
+(gdb) start
+(gdb)  set $dlopen = (void*(*)(char*, int)) dlopen
+(gdb)  set $dlclose = (int(*)(void*)) dlclose
+(gdb) set $library = $dlopen("/home/cyn/Desktop/DA/summer/gdb_test/lib1.so", 1)
+library lib1.so  loaded!
+(gdb) set $dlsym  = (void*(*)(void*, char*)) dlsym
+(gdb) set $foo_addr = $dlsym($library, "foo")
+(gdb) set $foo = (void (*)(void)) $foo_addr
+(gdb) call $foo()
+(gdb) print $foo_addr
+$1 = (void *) 0x7ffff7fc5147 <foo>
+(gdb) set $address = (unsigned long*) 0x555555557fc8
+(gdb) set *$address = 0x7ffff7fc5147
+(gdb) x/8xb $address
+(gdb) c
+Continuing.
+hello,worldfoo
+foo
+foo
+foo
+foo
+foo
+foo
+foo
+foo
+foo
+library lib1.so  unloaded!
+[Inferior 1 (process 25059) exited normally]
+(gdb) 
+
